@@ -18,8 +18,6 @@ $(document).ready( function(){
         //booksの表示のため別テンプレート呼び出し
         shelf.books.forEach(function(book){
           var book_id = "book" + book.book_id;
-          // console.log(shelf_id);
-          // console.log($("#" + shelf_id).html());
           $("#" + shelf_id).loadTemplate(
               "books.template.html",{
                 "isbn" : book.isbn,
