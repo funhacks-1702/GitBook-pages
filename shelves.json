@@ -19,7 +19,7 @@
          "file_name" : "https://images-fe.ssl-images-amazon.com/images/I/51rsbQOrZ0L._AC_US320_FMwebp_QL65_.jpg",
          "comment" : "必要なら使用",
          "tags" : ["tag1","tag2","tag3"]
-         }, ...
+         }
        ]
       },
       {
@@ -40,7 +40,7 @@
          "file_name" : "https://images-fe.ssl-images-amazon.com/images/I/51rsbQOrZ0L._AC_US320_FMwebp_QL65_.jpg",
          "comment" : "必要なら使用",
          "tags" : ["tag1","tag2","tag3"]
-         }, ...
+         }
        ]
       }
     ]
