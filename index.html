@@ -2,6 +2,7 @@
 <head>
   <title>GitBook</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/jquery.loadTemplate.min.js"></script>
   <script src="js/main.js"></script>
@@ -13,21 +14,34 @@
   <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div id = "sidebar">
-      <a href="#menu-shelves" class="list-group-item" data-toggle="collapse" data-target="#menu-shelves" data-parent="#sidebar">Sidebar</a>
-
-      <div id="menu-shelves" class="sublinks collapse">
-        <a class="list-group-item small" onclick=""> 本棚1<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
-        <a class="list-group-item small"> 本棚2<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+    <div id="modal-main" class="container">
+      <div class="row">
+        <img src="#" id="modal-book-img" class="col-xs-5">
+        <div class="col-xs-7" id="cont-modal-text">
+          <div id="modal-book-name"></div>
+          <div id="modal-isbn"></div>
+          <div id="modal-comment"></div>
+          <div id="modal-tags"></div>
+        </div>
       </div>
     </div>
 
-    <div id = "eyecatch">
-      <p id = "shelf_name">@@ の本棚</p>
-      <p id = "shelf_owner">created by @@</p>
+    <div id="eyecatch">
+      <span id="shelf_name">@@ の本棚</span>
+      <span id="shelf_owner">created by @@</span>
     </div>
 
 
-    <div id = "bookshelves"></div>
+    <div id="container-bookshelves" class="container">
+      <div id="bookshelves" class="row">
+      </div>
+    </div>
+
+    <div id="sidebar">
+      <a href="#menu-shelves" id="shelf-selector" class="list-group-item" data-toggle="collapse" data-target="#menu-shelves" data-parent="#sidebar">Bookshelves</a>
+
+      <div id="menu-shelves" class="sublinks collapse">
+      </div>
+    </div>
 </body>
 </html>
