@@ -4,6 +4,10 @@ body{
   margin : 0px;
 }
 
+.list-group-item{
+  border-radius: 0px;
+}
+
 #eyecatch{
   position: absolute;
   font-family: cursive;
