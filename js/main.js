@@ -1,3 +1,7 @@
+function changeShelf(shelfID) {
+  
+}
+
 $(document).ready( function(){
   $.getJSON("shelves.json", function(json){
     var bs_count=0;
@@ -11,28 +15,30 @@ $(document).ready( function(){
           "created_at" : shelf.created_at,
           "bookshelf_id" : shelf_id
         },
-        {append:true}
+        {append:true, async: false}
       );
 
       console.log(shelf.books);
       //booksの表示のため別テンプレート呼び出し
       shelf.books.forEach(function(book){
-        $("#bookshelves[shelf_id].books").loadTemplate(
+        var book_id = "book" + book.book_id;
+        $("#" + shelf_id + " .books").loadTemplate(
             "books.template.html",{
               "isbn" : book.isbn,
               "name" : book.name,
               "file_name" : book.file_name,
-              "comment" : book.comment
+              "comment" : book.comment,
+              "book_id" : book_id
             },
-            {append:true}
+            {append:true, async: false}
         );
         //tagsの表示のため別テンプレート呼び出し
         book.tags.forEach(function(tag){
-          $("#tags").loadTemplate(
+          $("#" + shelf_id + " .books #" + book_id).loadTemplate(
             "tags.template.html",{
               "tag" : tag
             },
-            {append:true}
+            {append:true, async: false}
           );
         }); // tags
       });   // books
