@@ -9,36 +9,42 @@ body{
 }
 
 #eyecatch{
-  position: absolute;;
+  position: absolute;
   font-family: cursive;
   color:slategray;
   width: 80vw;
-  left: 20%;
+  left: 20vw;
+  max-height:35vh;
   border-width: 2px;
   border-color: aliceblue;
   border-bottom-style:solid;
 }
 #eyecatch #shelf_name {
   font-size : 30px;
-  padding-top: 5%;
-  padding-left : 30%;
+  padding-top: 8vh;
+  padding-left : 30vw;
 }
 #eyecatch #shelf_owner{
   font-size : 20px;
-  padding-left: 60%;
-  padding-bottom: 5%;
+  padding-left: 50vw;
+  padding-bottom: 8vh;
 }
 
 #sidebar{
   position: fixed;
   width:20vw;
   height:100vh;
-  background-color: #f08080;
+  background-color: lightcoral;
 }
 
 
-#bookshelves{
+#bookshelf{
   position: absolute;
-  left:40vw;
-  top:40vh;
+  width:80vw;
+  height:65vh;
+  left:20vw;
+  top:35vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
 }

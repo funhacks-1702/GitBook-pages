@@ -14,7 +14,7 @@ $(document).ready( function(){
         {append:true}
       );
 
-      console.log(shelf.books);
+      //console.log(shelf.books);
       //booksの表示のため別テンプレート呼び出し
       shelf.books.forEach(function(book){
         $("#bookshelves[shelf_id].books").loadTemplate(
