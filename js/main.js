@@ -1,4 +1,4 @@
-$(funciton({
+$(function({
   $.getJSON("shelves.json", function(json){
     json.data.forEach(function(shelf){
       //bookshelfが複数の可能性があるためループ処理
@@ -29,7 +29,7 @@ $(funciton({
             "tag" : tag
           }
         );
-      }
+      });
 
     });
   });
