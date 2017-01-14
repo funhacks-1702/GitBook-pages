@@ -1,11 +1,13 @@
 @charset "UTF-8";
+
 body{
   margin : 0px;
 }
 
 #eyecatch{
   position: absolute;
-  width: 80%;
+  font-family: cursive;
+  width: 80vw;
   left: 20%;
   background-color:lavenderblush;
 }
@@ -19,7 +21,11 @@ body{
 }
 
 #sidebar{
-  position: absolute;
-  width:20%;
+  position: fixed;
+  width:20vw;
+  height:100vh;
   background-color: #f08080;
+}
+#sidebar #textarea{
+  resize:none;
 }

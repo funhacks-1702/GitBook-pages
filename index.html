@@ -7,15 +7,29 @@
   <script src="js/main.js"></script>
   <script src="js/eyechatch"></script>
   <link rel = "stylesheet" href = "css/main.css">
+
+  <!-- BootstrapのCSS読み込み -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- BootstrapのJS読み込み -->
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div id = "sidebar"></div>
+    <div id = "sidebar">
+      <textarea id = "search"></textarea>
+    </div>
     <div id = "eyecatch">
       <p id = "shelf_name">@@ の本棚</p>
       <p id = "shelf_owner">created by @@</p>
     </div>
 
-
+    <div class="accordion-group">
+      <div class="accordion-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#faq" href="#faqpost_1">タイトル1</a></div>
+      <div id="faqpost_1" class="accordion-body collapse">
+        <div class="accordion-inner">
+          <p>本文1</p>
+        </div>
+      </div>
+    </div>
 
     <div id = "bookshelves"></div>
 </body>
