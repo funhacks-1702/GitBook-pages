@@ -2,6 +2,7 @@
   {
     "bookshelves" : [
       {
+       "shelf_id" : 0,
        "shelf_name" : "私の本棚",
        "shelf_owner" : "Atsuya Sato",
        "created_at" : "Sat, Jan 2017 00:12:00 +0900",
@@ -23,6 +24,7 @@
        ]
       },
       {
+       "shelf_id" : 1,
        "shelf_name" : "私の本棚2",
        "shelf_owner" : "Atsuya Sato",
        "created_at" : "Sat, Jan 2017 00:12:00 +0900",
