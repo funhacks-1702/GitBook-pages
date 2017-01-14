@@ -2,9 +2,10 @@
 <head>
   <title>GitBook</title>
   <meta charset="utf-8">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/jquery.loadTemplate.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/eyechatch"></script>
   <link rel = "stylesheet" href = "css/main.css">
 
   <!-- BootstrapのCSS読み込み -->
@@ -13,18 +14,23 @@
   <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-
-    <div class="accordion-group">
-      <div class="accordion-heading">
-        <a class="accordion-toggle" data-toggle="collapse">タイトル1</a>
-      </div>
-      <div id="faqpost_1" class="accordion-body collapse">
-        <div class="accordion-inner">
-          <p>本文1</p>
+    <div id = "sidebar">
+      <a href="#sample" class="list-group-item" data-toggle="collapse" data-target="#sample" data-parent="#sidebar">
+      <div id="sample" class="collapse">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <h3>本のリスト</h3>
+            <p>ここにリストで追加</p>
+          </div>
         </div>
       </div>
     </div>
+    <div id = "eyecatch">
+      <p id = "shelf_name">@@ の本棚</p>
+      <p id = "shelf_owner">created by @@</p>
+    </div>
 
 
+    <div id = "bookshelves"></div>
 </body>
 </html>
