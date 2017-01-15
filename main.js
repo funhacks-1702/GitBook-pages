@@ -7,7 +7,7 @@ function changeShelf(shelfID) {
   var shelf_id = "shelf" + shelf.shelf_id;
   $("#bookshelves").empty();
   $("#bookshelves").loadTemplate(
-        "bookshelves.template.html",{
+        "bookshelves-template.html",{
           /*
           "shelf_name" : shelf.shelf_name,
           "shelf_owner" : shelf.shelf_owner,
@@ -24,7 +24,7 @@ function changeShelf(shelfID) {
   shelf.books.forEach(function(book){
     var book_id = "book" + book.book_id;
     $("#" + shelf_id + " .books").loadTemplate(
-            "books.template.html",{
+            "books-template.html",{
               "isbn" : book.isbn,
               "name" : book.name,
               "file_name" : book.file_name,
@@ -103,7 +103,7 @@ $(document).ready( function(){
       //bookshelfが複数の可能性があるためループ処理
 
       $("#menu-shelves").loadTemplate(
-        "sidebar.template.html",{
+        "sidebar-template.html",{
           "data_onclick": "changeShelf("+shelf.shelf_id+")",
           "shelf_name": '<span class="glyphicon glyphicon-book"></span> ' + shelf.shelf_name
         },

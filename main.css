@@ -3,6 +3,8 @@
 body {
   font-family: cursive;
   margin : 0px;
+  background-image: url("mokume3-mini.jpg");
+  background-repeat: repeat;
 }
 
 .list-group-item {
@@ -37,6 +39,7 @@ body {
   padding-top: 10vh;
   padding-left : 30%;
 }
+
 #eyecatch #shelf_owner {
   font-size : 20px;
   height: 3vh;
@@ -57,6 +60,7 @@ body {
   width: 100vw;
   margin: 0 auto;
   top: 35vh;
+  background-color: transparent;
 }
 
 .book-img {
@@ -69,7 +73,14 @@ body {
 
 #container-bookshelves {
   width: 100vw;
-  background-color: lavenderblush;
+  background-color: transparent;
+}
+
+#cont-container-bookshelves {
+  width: 100vw;
+  /* background-color: lavenderblush; */
+  background-image: url("mokume3.jpg");
+  background-repeat: repeat;
 }
 
 .col-book {
