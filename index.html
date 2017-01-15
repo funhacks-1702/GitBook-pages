@@ -16,7 +16,7 @@
 <body>
     <div id="modal-main" class="container">
       <div class="row">
-        <img src="#" id="modal-book-img" class="col-xs-5">
+        <img src="#" id="modal-book-img" class="col-xs-5"> <!-- class="col-xs-5"> -->
         <div class="col-xs-7" id="cont-modal-text">
           <div id="modal-book-name"></div>
           <div id="modal-isbn"></div>
@@ -27,8 +27,10 @@
     </div>
 
     <div id="eyecatch">
-      <span id="shelf_name">@@ の本棚</span>
-      <span id="shelf_owner">created by @@</span>
+      <div id="eyecatch-text-container">
+        <span id="shelf_name">@@ の本棚</span>
+        <span id="shelf_owner">created by @@</span>
+      </div>
     </div>
 
 
@@ -38,7 +40,7 @@
     </div>
 
     <div id="sidebar">
-      <a href="#menu-shelves" id="shelf-selector" class="list-group-item" data-toggle="collapse" data-target="#menu-shelves" data-parent="#sidebar">Bookshelves</a>
+      <a href="#menu-shelves" id="shelf-selector" class="list-group-item" data-toggle="collapse" data-target="#menu-shelves" data-parent="#sidebar"><span class="glyphicon glyphicon-list"></span> Bookshelves</a>
 
       <div id="menu-shelves" class="sublinks collapse">
       </div>

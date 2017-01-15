@@ -34,6 +34,7 @@ function changeShelf(shelfID) {
             {append:true, async: false}
     );
     //tagsの表示のため別テンプレート呼び出し
+    /*
     book.tags.forEach(function(tag){
       $("#" + shelf_id + " .books #" + book_id).loadTemplate(
         "tags.template.html",{
@@ -42,6 +43,7 @@ function changeShelf(shelfID) {
             {append:true, async: false}
           );
     }); // tags
+    */
   });   // books
 
   $(".col-book").click(function(evt) {
@@ -103,7 +105,7 @@ $(document).ready( function(){
       $("#menu-shelves").loadTemplate(
         "sidebar.template.html",{
           "data_onclick": "changeShelf("+shelf.shelf_id+")",
-          "shelf_name": shelf.shelf_name + '<span class="glyphicon glyphicon-chevron-right pull-right"></span>'
+          "shelf_name": '<span class="glyphicon glyphicon-book"></span> ' + shelf.shelf_name
         },
         {append:true, async: false}
       );
