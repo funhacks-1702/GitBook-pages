@@ -79,8 +79,8 @@ body {
 #cont-container-bookshelves {
   width: 100vw;
   /* background-color: lavenderblush; */
-  background-image: url("mokume3.jpg");
-  background-repeat: repeat;
+  background-color: transparent;
+  /* background-repeat: repeat; */
 }
 
 .col-book {
@@ -88,10 +88,14 @@ body {
   transform-origin: center bottom;
   transition: all 0.2s ease 0s;
   transform: matrix3d(1,0,0.00,0,0.00,0.98,0.17,-0.0004,0,-0.17,0.98,0,0,0,0,1);
+  -webkit-transform-origin: center bottom;
+  -webkit-transition: all 0.2s ease 0s;
+  -webkit-transform: matrix3d(1,0,0.00,0,0.00,0.98,0.17,-0.0004,0,-0.17,0.98,0,0,0,0,1);
 }
 
 .col-book:hover {
   transform: matrix3d(1,0,0.00,0,0.00,1,0,0,0,-0.17,0.98,0,0,0,0,1);
+  -webkit-transform: matrix3d(1,0,0.00,0,0.00,1,0,0,0,-0.17,0.98,0,0,0,0,1);
 }
 
 /* モーダルウィンドウ関連 */
@@ -107,6 +111,7 @@ body {
   position:fixed;
   z-index: 30;
   border-radius: 8px;
+  overflow: hidden;
 }
 /* モーダル 背景エリア */
 #modal-bg {
